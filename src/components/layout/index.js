@@ -2,9 +2,9 @@ import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-function Layout({children}) {
+function Layout({preloader,children}) {
     return (
-        <div>
+        <div className={preloader ? 'preloader':''}>
                 <Navbar/>
                 <main> {children}</main>
                 <Footer />

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Vehicle from './vehicle';
 import {connect} from 'react-redux';
 import {addItemToCart, clearError} from '../actions/cartActions';
@@ -11,8 +11,8 @@ function Vehicles({vehicles, addItemToCart, error, clearError}) {
          {error?
                        <ErrorAlert error={error} clearError={clearError} />:''
             }
-        <Scrollbar>
-        <div className="container container-fluid">
+        <Scrollbar className="scroll">
+        <div className="container container-fluid mb-6">
            
                      
            { vehicles.map((vehicle) => <Vehicle key={vehicle.id} vehicle={vehicle} addItemToCart={addItemToCart} error={error}/> )      

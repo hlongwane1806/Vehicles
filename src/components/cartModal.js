@@ -22,8 +22,9 @@ function cartModal({ isOpen, hideModal, cart, removeItemFromCart }) {
         <div className="modal-body">
             {cart.length === 0 ? <p>Cart is empty</p>
             :
-            cart.map(item => <CartItem key={item.id}  item={item} removeItemFromCart={removeItemFromCart}/> )
-
+            <ul className="list-group list-group-flush">
+            {cart.map(item => <CartItem key={item.id}  item={item} removeItemFromCart={removeItemFromCart}/> )}
+                </ul>
             }
               
                 </div>

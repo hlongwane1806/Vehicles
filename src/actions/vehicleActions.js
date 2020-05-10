@@ -1,6 +1,6 @@
 import {FETCH_VEHICLES, FILTER_VEHICLES, LOADING} from './types';
 import axios from 'axios';
-import vehicles from '../data/vehicles.json';
+
 
 export const getVehicles = ()=> dispatch => {
   axios.get('https://warpfrontendtestserver.herokuapp.com/v1/vehicles')
@@ -12,7 +12,7 @@ export const getVehicles = ()=> dispatch => {
     })
     .catch(error => console.log(error));
 
-    
+
     
 }
 

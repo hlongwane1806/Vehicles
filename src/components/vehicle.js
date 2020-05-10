@@ -8,7 +8,7 @@ function Vehicle({vehicle, addItemToCart, error}) {
     return (
         <div className="card mb-3 mt-3">
             <div className="row">
-                <div className="col-sm-12 col-md-12 col-lg-5 ">
+                <div className="col-sm-12 col-md-12 col-lg-5 vehicle-img-container">
                     <img src={image||defaultImg} className="card-img center" alt="Vehicle image" />  
                 </div>
                 <div className="col-sm-12 col-md-12 col-lg-7 ">

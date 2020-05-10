@@ -20,10 +20,10 @@ function Navbar({size}) {
 
   
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
         <a className="navbar-brand" href="#">Vehicles</a>
        
-        <div className="navbar-links">
+        <div className="navbar-links justify-content-end">
           <ul className="navbar-nav">
             
             <li className="nav-item">
@@ -32,7 +32,7 @@ function Navbar({size}) {
               
               <a onClick={showModal} className="nav-link" target = "_blank" >
               <NotificationBadge count={size} effect={Effect.SCALE}/>
-                <FaShoppingCart  className="badge"/></a>
+                <FaShoppingCart  className="cart-icon badge"/></a>
                   
               
             </li>

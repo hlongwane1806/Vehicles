@@ -1,7 +1,96 @@
+
+/*Global css*/
 .mt-6{
   margin-top:6rem;
 }
-.badge{
+.mb-6{
+
+  margin-bottom: 4rem;
+}
+.scroll{
+  height:100vh !important;
+}
+.title{
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+main{
+  min-height: 100vh;
+}
+
+@media (max-width:767px){
+  .content{
+      min-height: auto;
+  }
+}
+
+@media (min-width:768px ){
+  .content{
+      min-height: auto;
+  }
+}
+
+/*Navbar items*/
+.navbar-links{
+  display: flex;
+  width:70%;
+  height:auto;
+}
+@media (max-width:1000px){
+  .navbar-links{
+      min-width: auto;
+  }
+}
+@media (max-width:320px){
+.navbar-links{
+  max-width: 60%;
+}
+}
+
+.cart-icon{
   width:35px;
   height: auto;
+  color:yellow;
+}
+
+/*preloader*/
+.preloader{
+  background-color: #E6E6E6;
+  max-width:100%;
+  height:auto;
+}
+
+.img-preloader{
+  max-width: 90vw;
+  height:auto;
+}
+/*Vehicles*/
+
+.vehicle-img-container{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+}
+/*Footer*/
+.footer-copyright{
+  color:#fff;
+  
+}
+
+.footer-copyright a{
+  color:#fff;
+
+
+  
+}
+
+.footer-copyright a:hover{
+text-decoration: none;
+
+
+  
 }

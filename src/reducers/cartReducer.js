@@ -1,6 +1,6 @@
 import {ADD_TO_CART, REMOVE_FROM_CART, ERROR} 
      from '../actions/types';
-import {addItem, itemInCart} from '../functions/cartFunctions';
+import {addItem} from '../functions/cartFunctions';
 
 const initialState = {
    cart:[],

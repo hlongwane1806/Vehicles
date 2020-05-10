@@ -9,7 +9,7 @@ function searchBar(props) {
     props.filterVehicles(event.target.name, event.target.value)
   }
     const {minPrice,  maxPrice ,manufacturers,manufacturer,body ,bodyStyles, priceFrom, priceTo} =props;
-    const step = Math.floor((maxPrice-minPrice)/50);
+    const step = Math.floor((maxPrice-minPrice)/100);
      
     return (
         <form>
