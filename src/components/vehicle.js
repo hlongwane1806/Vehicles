@@ -14,10 +14,10 @@ function Vehicle({vehicle, addItemToCart, error}) {
                 <div className="col-sm-12 col-md-12 col-lg-7 ">
                 <div className="card-body">
                     <div className="card-text">
-                    <p>Price: {vehicle.price}</p>
-                    <p>Make {vehicle.manufacturer}</p>
-                    <p>Model {vehicle.model}</p>
-                    <p>Body {vehicle.body}</p>
+                    <p>Price: R{vehicle.price}</p>
+                    <p>Make: {vehicle.manufacturer}</p>
+                    <p>Model: {vehicle.model}</p>
+                    <p>Body: {vehicle.body}</p>
                     
                    <button onClick={()=>addItemToCart(vehicle)} className="btn btn-primary">Add to cart</button>
                     </div>
