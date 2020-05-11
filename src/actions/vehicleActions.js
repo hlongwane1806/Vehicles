@@ -1,4 +1,4 @@
-import {FETCH_VEHICLES, FILTER_VEHICLES, LOADING} from './types';
+import {FETCH_VEHICLES, FILTER_VEHICLES} from './types';
 import axios from 'axios';
 
 
@@ -31,10 +31,3 @@ export const filterVehicles = (name, value) => dispatch =>{
 
 }
 
-
-export const setLoading = ()=>{
-    return{
-        type:LOADING,
-        payload: true,
-    }
-}

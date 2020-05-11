@@ -1,4 +1,4 @@
-import {FETCH_VEHICLES,  FILTER_VEHICLES, LOADING} 
+import {FETCH_VEHICLES,  FILTER_VEHICLES} 
      from '../actions/types';
 import {initialize, filterVehicles} from '../functions/VehicleFunctions';
 
@@ -33,12 +33,7 @@ export default function(state=initialState, action){
             break;
 
        
-       case LOADING:
-            return{
-                ...state,
-                loading:true,
-            }
-            break;
+       
         case FILTER_VEHICLES:
             const newState = {...state,
                 [action.payload.name]: action.payload.value};

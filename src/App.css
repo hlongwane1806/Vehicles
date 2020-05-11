@@ -59,6 +59,10 @@ main{
   background-color: #E6E6E6;
   max-width:100%;
   height:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-preloader{

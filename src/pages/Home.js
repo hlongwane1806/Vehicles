@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 import SearchBar from '../components/searchBar';
 import Vehicles from '../components/vehicles';
 import {connect} from 'react-redux';
-import {getVehicles, setLoading, filterVehicles} from '../actions/vehicleActions';
+import {getVehicles, filterVehicles} from '../actions/vehicleActions';
 import Preloader from '../components/Preloader'
 
 
@@ -50,5 +50,5 @@ const mapStateToProps = (state) =>({
     ...state.data
 });
 
-const mapDispatchToProps = {getVehicles, setLoading, filterVehicles};
+const mapDispatchToProps = {getVehicles, filterVehicles};
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
